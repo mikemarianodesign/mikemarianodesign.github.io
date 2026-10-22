@@ -25,12 +25,12 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="effective-date">Effective Date: October 22, 2026 (updated for achievements)</p>
+<p class="effective-date">Effective Date: October 22, 2026 (updated for achievements and analytics)</p>
 
 <p>Finish Line Labs, LLC ("we", "us", or "our") operates the Pusoy Dos! mobile application (the "App"), available for Android and iOS. This Privacy Policy explains how the App handles your information.</p>
 
 <div class="summary">
-  <p><strong>In short:</strong> We run no servers of our own and collect nothing about you. Your progress stays on your device; achievements are also shown in Game Center or Google Play Games if you use them. Online play connects you to your friends through Unity's game services using an anonymous ID, and the name you type is shown only to the players in your room. There is no advertising, no analytics, and no advertising identifier.</p>
+  <p><strong>In short:</strong> We run no servers of our own. Your progress stays on your device; achievements are also shown in Game Center or Google Play Games if you use them. Online play connects you to your friends through Unity's game services using an anonymous ID, and the name you type is shown only to the players in your room. We collect <strong>anonymous gameplay analytics</strong> (how matches and the Journey go) to balance the game, and you can switch that off in Settings. There is no advertising and no advertising identifier.</p>
 </div>
 
 <h2>Information the App Uses</h2>
@@ -51,11 +51,24 @@
 <p>The App has achievements (for example, clearing a chapter of the Journey). They are kept on your device, and if you are signed in to <strong>Game Center</strong> (iOS) or <strong>Google Play Games</strong> (Android), the App also reports the achievements you earn to that service so they appear in your profile there. The App signs in automatically when you open it if you already use the service on your device; you can sign out or turn it off in your device's settings, and the App works the same without it.</p>
 <p>The App receives only what it needs to show that you are signed in. It does not receive your email address, contacts, or friends list, and it does not send your game progress anywhere else. Game Center is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a> and Google Play Games by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
+<h2>Analytics</h2>
+<p>The App uses <strong>Google Analytics for Firebase</strong> to understand how the game is played, so that it can be balanced and problems found. This is limited to gameplay. The App can only send the following events, and there is no mechanism in it for sending anything else:</p>
+<ul>
+  <li>A match starting and ending: whether it was Practice, the Journey or online, whether you won, how many deals it took, and your score</li>
+  <li>A deal ending: whether you went out first, and the points you took</li>
+  <li>Challenging a Journey stop, and the result: which stop, the stars earned, and the lives left</li>
+  <li>Running out of lives, and buying a lives refill</li>
+  <li>Making, joining or rejoining an online room, and taking over as host</li>
+  <li>Earning an achievement (which one), and opening How to Play</li>
+</ul>
+<p>No names, room codes, or anything you type are ever sent. Firebase itself collects standard technical information such as a randomly generated app instance identifier, device model, operating system version, and an approximate region derived from your IP address; it also records in-app purchases made through the store, without any payment details. This is described in <a href="https://firebase.google.com/support/privacy">Google's Firebase Privacy documentation</a>. The App does <strong>not</strong> collect or send an advertising identifier: the advertising permissions Firebase would normally add are removed from the app before it is built, and it does not use Apple's advertising identifier.</p>
+<p><strong>You can turn analytics off.</strong> Open Settings in the App and switch ANALYTICS to OFF. It is on by default; switching it off stops collection on that device immediately.</p>
+
 <h2>What the App Does Not Do</h2>
 <p>To be explicit, the App contains none of the following:</p>
 <ul>
   <li>No advertising, and no advertising identifier</li>
-  <li>No analytics, crash reporting, or tracking services</li>
+  <li>No crash reporting, and no tracking across other companies' apps or websites</li>
   <li>No third-party marketing, attribution, or social media SDKs</li>
   <li>No account creation or login, and no collection of your email address or phone number</li>
   <li>No access to location, camera, microphone, photos, or contacts</li>
@@ -75,9 +88,10 @@
 <ul>
   <li><strong>On your device:</strong> Uninstalling the App removes your progress.</li>
   <li><strong>Achievements:</strong> Game Center and Google Play Games keep the achievements reported to them under your account there; you can remove that data through Apple or Google.</li>
+  <li><strong>Analytics:</strong> Switching ANALYTICS off in Settings stops collection on that device straight away. Analytics events are anonymous and not tied to a name or an account, so there is no personal record for us to look up or delete. Firebase retains event data according to Google's retention settings.</li>
   <li><strong>Online play:</strong> Rooms close when the game ends, and the names typed in them are not kept. The anonymous player ID is held by Unity; to have it deleted, email us at the address below and we will ask Unity to remove it.</li>
 </ul>
-<p>We hold no data about you: no account, no profile, and no copy of your progress.</p>
+<p>Apart from anonymous analytics, we hold no data about you: no account, no profile, and no copy of your progress.</p>
 
 <h2>Children's Privacy</h2>
 <p>The App is not directed at children under 13, and we do not knowingly collect personal information from children under 13.</p>
